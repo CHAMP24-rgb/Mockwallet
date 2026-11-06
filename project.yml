@@ -1,0 +1,22 @@
+name: MockWallet
+options:
+  bundleIdPrefix: com.student
+targets:
+  MockWallet:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources: [Sources, Resources]
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: Wallet
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIRequiresFullScreen: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.student.mockwallet
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        TARGETED_DEVICE_FAMILY: "1"
